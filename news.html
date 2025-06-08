@@ -3,112 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>أخبار اليوم - Abdelaziz Foot</title>
+  <title>أخبار كرة القدم - Abdelaziz Foot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
-      direction: rtl;
+    :root {
+      --primary: #ffcc00;
+      --bg: #0a0a0a;
+      --card-bg: #1a1a1a;
+      --text: #fff;
+      --subtext: #888;
+      --maxw: 1600px;
     }
-    header {
-      background-color: #1e1e1e;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #ffcc00;
-    }
-    header h1 {
-      margin: 0;
-      color: #ffcc00;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: #ffffff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background-color: #1e1e1e;
-      border: 1px solid #333;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    .card h2 {
-      color: #ffcc00;
-      margin-top: 0;
-    }
-    .date {
-      font-size: 0.9em;
-      color: #999;
-      margin-bottom: 10px;
-    }
-    a.btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #ffcc00;
-      color: #000;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a.btn:hover {
-      background-color: #e6b800;
-    }
-    ul {
-      padding-left: 20px;
-      color: #ddd;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family:'Cairo',sans-serif; background:var(--bg); color:var(--text); direction:rtl; }
+    header { background:linear-gradient(90deg,#111,#222); padding:30px; text-align:center; border-bottom:4px solid var(--primary); }
+    header h1 { font-size:2.5rem; color:var(--primary); }
+    nav a { color:var(--text); margin:0 20px; text-decoration:none; font-weight:bold; font-size:1.1rem; }
+    nav a:hover { color:var(--primary); }
+    main { max-width:var(--maxw); margin:auto; padding:40px 20px; }
+    .highlight { background:var(--card-bg); border-radius:12px; overflow:hidden; margin-bottom:40px; box-shadow:0 0 15px rgba(255,204,0,0.2); }
+    .highlight img { width:100%; height:auto; }
+    .highlight .cap { padding:25px; }
+    .highlight h2 { color:var(--primary); font-size:2rem; }
+    .highlight p { color:#ddd; font-size:1.1rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(380px,1fr)); gap:30px; }
+    .card { background:var(--card-bg); border-radius:12px; padding:25px; transition:transform .3s,box-shadow .3s; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.3); }
+    .card h3 { color:var(--primary); font-size:1.6rem; margin-bottom:10px; }
+    .date { color:var(--subtext); font-size:0.9rem; margin-bottom:10px; }
+    .card p { line-height:1.8; font-size:1rem; color:#ccc; }
+    .btn { display:inline-block; margin-top:15px; padding:12px 25px; background:var(--primary); color:#000; border-radius:8px; text-decoration:none; font-weight:bold; }
+    .btn:hover { background:#e6b800; }
+    footer { text-align:center; padding:30px; color:#999; font-size:0.9rem; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>أخبار كرة القدم - 8 يونيو 2025 - 9:45 مساءً</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="news.html">أخبار اليوم</a>
-    </nav>
-  </header>
+<header>
+  <h1>أخبار كرة القدم - 8 يونيو 2025</h1>
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="#">مباريات اليوم</a>
+  </nav>
+</header>
 
-  <div class="container">
-    <div class="card">
-      <h2>نهائي دوري الأمم الأوروبية: البرتغال × إسبانيا</h2>
-      <div class="date">8 يونيو 2025</div>
-      <p>تتجه أنظار عشاق كرة القدم الأوروبية مساء اليوم إلى ملعب أليانز أرينا في ميونيخ لمتابعة مباراة نهائي دوري الأمم الأوروبية بين منتخبي البرتغال وإسبانيا، بعد مشوار حافل بالإثارة.</p>
-      <a class="btn" href="https://www.uefa.com/uefanationsleague/" target="_blank" rel="noopener">المزيد عن المباراة</a>
-    </div>
+<main>
 
-    <div class="card">
-      <h2>فرنسا تتفوق على ألمانيا في مباراة تحديد المركز الثالث</h2>
-      <div class="date">8 يونيو 2025</div>
-      <p>تمكنت فرنسا من الفوز على ألمانيا 2-0 في مباراة تحديد المركز الثالث بدوري الأمم الأوروبية، التي أُقيمت في شتوتغارت. سجل كيليان مبابي هدفًا وصنع آخر، ليقود منتخب بلاده إلى المركز الثالث في البطولة.</p>
-    </div>
-
-    <div class="card">
-      <h2>مواعيد مباريات اليوم</h2>
-      <div class="date">8 يونيو 2025</div>
-      <p>إليك بعض المباريات البارزة المقررة اليوم:</p>
-      <ul>
-        <li>البرتغال × إسبانيا – نهائي دوري الأمم الأوروبية</li>
-        <li>البنك الأهلي × إنبي – ذهاب نصف نهائي كأس عاصمة مصر</li>
-        <li>الأهلي × باتشوكا المكسيكي – مباراة ودية دولية</li>
-      </ul>
+  <div class="highlight">
+    <img src="https://cdn.pixabay.com/photo/2020/06/13/07/51/soccer-5288668_1280.jpg" alt="نهائي Nations League">
+    <div class="cap">
+      <h2>البرتغال تحرز لقب Nations League بعد ركلات الجزاء!</h2>
+      <p>
+        انتهى اللقاء بين البرتغال وإسبانيا بنتيجة 📌 2–2 (بعد الوقت الإضافي)، ثم فازت البرتغال **5–3** بركلات الجزاء.  
+        كريستيانو رونالدو (40 عامًا) سجل هدف التعادل بصوت حماسي، ولم يتمالك نفسه من البكاء بعد الفوز 1.
+      </p>
     </div>
   </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="date">8 يونيو 2025</div>
+      <h3>تفاصيل نهائي Nations League</h3>
+      <p>
+        المنتخب البرتغالي افتتح التسجيل عبر رونالدو (د.61)، لكن إسبانيا ردت بهدف زوبيندندي (د.21) وأويارزابال (د.45)، ثم عاد رونالدو ليوازن النتيجة 2.
+      </p>
+      <a href="https://www.uefa.com/uefanationsleague/" class="btn" target="_blank">المزيد</a>
+    </div>
+
+    <div class="card">
+      <div class="date">8 يونيو 2025</div>
+      <h3>إسبانيا تخسر لقب البطولة لكن بصمة واعدة</h3>
+      <p>
+        رغم الأداء الممتاز، خسر منتخب إسبانيا بركلات الجزاء بعد أن فشل موراتا في تحقيق الفوز، بينما سطع نونو مينديز والرواية الكبرى لرونالدو 3.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="date">8 يونيو 2025</div>
+      <h3>مباريات اليوم الأخرى</h3>
+      <p>
+        - ذهاب نصف نهائي كأس النيل: البنك الأهلي × إنبي.<br>
+        - مباراة ودية: الأهلي المصري × باتشوكا المكسيكي.
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2025 Abdelaziz Foot – جميع الحقوق محفوظة.
+</footer>
 
 </body>
 </html>
