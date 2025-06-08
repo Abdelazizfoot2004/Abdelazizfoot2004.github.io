@@ -3,101 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>أخبار كرة القدم - Abdelaziz Foot</title>
+  <title>أخبار اليوم - Abdelaziz Foot</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      direction: rtl;
-      padding: 20px;
-      background: #f9f9f9;
-      color: #333;
       margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      direction: rtl;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ffcc00;
+    }
+    header h1 {
+      margin: 0;
+      color: #ffcc00;
     }
     nav {
-      background-color: #0056b3;
-      padding: 10px 0;
+      margin-top: 10px;
     }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-    nav ul li a {
-      color: white;
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 18px;
     }
-    nav ul li a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
-    h1 {
-      text-align: center;
-      color: #0056b3;
-      margin-top: 20px;
+    .container {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .news-item {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin: 20px auto;
-      padding: 15px 20px;
-      max-width: 900px;
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
-    .news-item h2 {
-      margin: 0 0 10px 0;
-      color: #007bff;
+    .card h2 {
+      color: #ffcc00;
+      margin-top: 0;
     }
     .date {
-      color: #777;
       font-size: 0.9em;
+      color: #999;
       margin-bottom: 10px;
     }
-    a {
-      color: #007bff;
+    a.btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: #000;
+      border-radius: 6px;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
+    a.btn:hover {
+      background-color: #e6b800;
+    }
+    ul {
+      padding-left: 20px;
+      color: #ddd;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">الرئيسية</a></li>
-      <li><a href="news.html">أخبار اليوم</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1>أخبار كرة القدم - 8 يونيو 2025 - 9:45 مساءً</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="news.html">أخبار اليوم</a>
+    </nav>
+  </header>
 
-  <h1>أخبار كرة القدم - 8 يونيو 2025 - 9:45 مساءً</h1>
+  <div class="container">
+    <div class="card">
+      <h2>نهائي دوري الأمم الأوروبية: البرتغال × إسبانيا</h2>
+      <div class="date">8 يونيو 2025</div>
+      <p>تتجه أنظار عشاق كرة القدم الأوروبية مساء اليوم إلى ملعب أليانز أرينا في ميونيخ لمتابعة مباراة نهائي دوري الأمم الأوروبية بين منتخبي البرتغال وإسبانيا، بعد مشوار حافل بالإثارة.</p>
+      <a class="btn" href="https://www.uefa.com/uefanationsleague/" target="_blank" rel="noopener">المزيد عن المباراة</a>
+    </div>
 
-  <div class="news-item">
-    <h2>نهائي دوري الأمم الأوروبية: البرتغال × إسبانيا</h2>
-    <div class="date">8 يونيو 2025</div>
-    <p>تتجه أنظار عشاق كرة القدم الأوروبية مساء اليوم إلى ملعب أليانز أرينا في ميونيخ لمتابعة مباراة نهائي دوري الأمم الأوروبية بين منتخبي البرتغال وإسبانيا، بعد مشوار حافل بالإثارة.</p>
-    <a href="https://www.uefa.com/uefanationsleague/" target="_blank">المزيد عن المباراة</a>
-  </div>
+    <div class="card">
+      <h2>فرنسا تتفوق على ألمانيا في مباراة تحديد المركز الثالث</h2>
+      <div class="date">8 يونيو 2025</div>
+      <p>تمكنت فرنسا من الفوز على ألمانيا 2-0 في مباراة تحديد المركز الثالث بدوري الأمم الأوروبية، التي أُقيمت في شتوتغارت. سجل كيليان مبابي هدفًا وصنع آخر، ليقود منتخب بلاده إلى المركز الثالث في البطولة.</p>
+    </div>
 
-  <div class="news-item">
-    <h2>فرنسا تتفوق على ألمانيا في مباراة تحديد المركز الثالث</h2>
-    <div class="date">8 يونيو 2025</div>
-    <p>تمكنت فرنسا من الفوز على ألمانيا 2-0 في مباراة تحديد المركز الثالث بدوري الأمم الأوروبية، التي أُقيمت في شتوتغارت. سجل كيليان مبابي هدفًا وصنع آخر، ليقود منتخب بلاده إلى المركز الثالث في البطولة.</p>
-  </div>
-
-  <div class="news-item">
-    <h2>مواعيد مباريات اليوم</h2>
-    <div class="date">8 يونيو 2025</div>
-    <p>إليك بعض المباريات البارزة المقررة اليوم:</p>
-    <ul>
-      <li>البرتغال × إسبانيا – نهائي دوري الأمم الأوروبية</li>
-      <li>البنك الأهلي × إنبي – ذهاب نصف نهائي كأس عاصمة مصر</li>
-      <li>الأهلي × باتشوكا المكسيكي – مباراة ودية دولية</li>
-    </ul>
+    <div class="card">
+      <h2>مواعيد مباريات اليوم</h2>
+      <div class="date">8 يونيو 2025</div>
+      <p>إليك بعض المباريات البارزة المقررة اليوم:</p>
+      <ul>
+        <li>البرتغال × إسبانيا – نهائي دوري الأمم الأوروبية</li>
+        <li>البنك الأهلي × إنبي – ذهاب نصف نهائي كأس عاصمة مصر</li>
+        <li>الأهلي × باتشوكا المكسيكي – مباراة ودية دولية</li>
+      </ul>
+    </div>
   </div>
 
 </body>
