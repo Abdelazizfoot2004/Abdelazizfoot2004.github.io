@@ -1,95 +1,103 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>Abdelaziz Foot - الموقع الرسمي</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdelaziz Foot - الرئيسية</title>
   <style>
     body {
-      font-family: 'Cairo', sans-serif;
-      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
       margin: 0;
-      padding: 0;
-    }header {
-  background-color: #ffcc00;
-  padding: 20px;
-  text-align: center;
-  color: #000;
-}
+      font-family: 'Cairo', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      direction: rtl;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 36px;
-}
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ffcc00;
+    }
 
-nav {
-  text-align: center;
-  margin-top: 10px;
-}
+    header h1 {
+      margin: 0;
+      color: #ffcc00;
+    }
 
-nav a {
-  margin: 0 10px;
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-}
+    nav {
+      margin-top: 10px;
+    }
 
-nav a:hover {
-  text-decoration: underline;
-}
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.content {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-}
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-h2 {
-  color: #ffcc00;
-  font-size: 28px;
-  border-bottom: 1px solid #ffcc00;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
+    .container {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-p {
-  font-size: 18px;
-  line-height: 1.8;
-}
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
 
-.tweet-container {
-  margin-top: 30px;
-  text-align: center;
-}
+    .card h2 {
+      color: #ffcc00;
+      margin-top: 0;
+    }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111;
-  color: #aaa;
-  font-size: 14px;
-}
+    .date {
+      font-size: 0.9em;
+      color: #999;
+      margin-bottom: 10px;
+    }
 
+    a.btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.btn:hover {
+      background-color: #e6b800;
+    }
   </style>
 </head>
-<body>  <header>
+<body>
+
+  <header>
     <h1>Abdelaziz Foot</h1>
     <nav>
-      <a href="https://facebook.com" target="_blank">فيسبوك</a>
-      |
-      <a href="https://instagram.com" target="_blank">إنستغرام</a>
-      |
-      <a href="about.html">حول الموقع</a>
+      <a href="index.html">الرئيسية</a>
+      <a href="news.html">أخبار اليوم</a>
     </nav>
-  </header>  <div class="content">
-    <h2>📰 آخر الأخبار</h2>
-    <div class="tweet-container">
-      <blockquote class="twitter-tweet">
-        <a href="https://x.com/DZFOOTBALLDZ/status/1931689526583345286"></a>
-      </blockquote>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>مرحبا بك في Abdelaziz Foot</h2>
+      <p>كل جديد في عالم كرة القدم، تغطية فورية وتحليلات لمباريات اليوم.</p>
+      <a class="btn" href="news.html">شاهد آخر الأخبار</a>
     </div>
-  </div>  <footer>
-    © 2025 Abdelaziz Foot. جميع الحقوق محفوظة.
-  </footer></body>
+  </div>
+
+</body>
 </html>
