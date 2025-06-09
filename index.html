@@ -2,146 +2,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abdelaziz Foot - الموقع الرسمي</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <title>Abdelaziz Foot - موقع أخبار برشلونة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background: linear-gradient(135deg, #002D72, #A50044);
-      color: #fff;
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(135deg, #0a0028, #23004a);
+      color: #f9f9f9;
       direction: rtl;
       overflow-x: hidden;
     }
     header {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
       text-align: center;
-      border-bottom: 3px solid #FDB913;
-      animation: fadeInDown 1.2s ease;
+      padding: 30px 20px;
+      border-bottom: 3px solid #fcba03;
+      box-shadow: 0 0 15px #fc03ec;
     }
     header h1 {
-      margin: 0;
       font-size: 2.5em;
-      color: #FDB913;
+      color: #fcba03;
+      text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc;
     }
     nav {
-      margin-top: 10px;
+      margin-top: 15px;
     }
     nav a {
       color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #FDB913;
+      color: #fcba03;
+      text-shadow: 0 0 5px #fcba03;
     }
     .container {
-      padding: 30px 20px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
-      animation: fadeInUp 1s ease;
     }
     .card {
-      background-color: rgba(0, 0, 0, 0.7);
-      border: 1px solid #444;
+      background: rgba(30, 30, 30, 0.9);
+      border: 2px solid #ff00cc;
       padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px #fc03ec;
     }
     .card h2 {
-      color: #FDB913;
-      margin-top: 0;
+      color: #fcba03;
+      font-size: 1.6em;
     }
     .date {
-      font-size: 0.9em;
-      color: #ccc;
+      font-size: 0.85em;
+      color: #aaa;
       margin-bottom: 10px;
     }
     a.btn {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 15px;
       padding: 10px 20px;
-      background-color: #FDB913;
+      background-color: #fcba03;
       color: #000;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
+      transition: background 0.3s;
     }
     a.btn:hover {
       background-color: #e0a800;
     }
-    ul {
-      padding-left: 20px;
-      color: #eee;
-    }
     footer {
-      background-color: rgba(0,0,0,0.6);
+      background: #0f0f0f;
+      padding: 25px 20px;
       text-align: center;
-      padding: 20px;
-      border-top: 2px solid #FDB913;
-      font-size: 14px;
-      margin-top: 40px;
+      color: #888;
+      font-size: 0.9em;
     }
     .social-icons a {
-      color: #fff;
+      color: #fcba03;
+      font-size: 1.5em;
       margin: 0 10px;
-      font-size: 20px;
+      transition: transform 0.3s;
     }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #ff00cc;
     }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
+    .about {
+      margin-top: 40px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #fcba03;
+      border-radius: 15px;
+    }
+    .about h3 {
+      color: #fcba03;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Abdelaziz Foot - الموقع الرسمي</h1>
+    <h1>Abdelaziz Foot - أخبار برشلونة</h1>
     <nav>
       <a href="#">الرئيسية</a>
       <a href="#news">الأخبار</a>
       <a href="#about">حول</a>
-      <a href="#social">تابعنا</a>
     </nav>
   </header>  <div class="container" id="news">
     <div class="card">
       <h2>نهائي دوري الأمم الأوروبية: البرتغال × إسبانيا</h2>
       <div class="date">8 يونيو 2025</div>
-      <p>مواجهة نارية بين البرتغال وإسبانيا على أرضية ملعب أليانز أرينا في نهائي دوري الأمم الأوروبية. من سيحمل اللقب؟</p>
-      <a class="btn" href="https://www.uefa.com/uefanationsleague/" target="_blank">المزيد</a>
-    </div>
-    <div class="card">
-      <h2>فرنسا تتفوق على ألمانيا</h2>
-      <div class="date">8 يونيو 2025</div>
-      <p>بهدف مبابي وصناعة مذهلة، فرنسا تحصد المركز الثالث على حساب ألمانيا في مواجهة قوية.</p>
-    </div>
-    <div class="card">
-      <h2>نتائج مباريات اليوم</h2>
-      <div class="date">8 يونيو 2025</div>
-      <ul>
-        <li>البرتغال 2 × 1 إسبانيا</li>
-        <li>فرنسا 2 × 0 ألمانيا</li>
-        <li>الأهلي 1 × 1 باتشوكا</li>
-      </ul>
-    </div>
-  </div>  <div class="container" id="about">
-    <div class="card">
-      <h2>حول Abdelaziz Foot</h2>
-      <p>Abdelaziz Foot هو موقع رياضي جزائري يهتم بتقديم آخر أخبار كرة القدم، تغطية المباريات، النتائج المباشرة، والتحليلات الدقيقة بلغة عربية بسيطة واحترافية. هدفنا هو تقديم محتوى عالي الجودة لعشاق الرياضة في الجزائر والعالم العربي.</p>
-    </div>
-  </div>  <footer id="social">
+      <p>مباراة مثيرة بين البرتغال وإسبانيا تُقام الليلة في ملعب أليانز أرينا لتحديد بطل دوري الأمم الأوروبية.</p>
+      <a class="btn" href="https://www.uefa.com/uefanationsleague/" target="_blank">تفاصيل أكثر</a>
+    </div><div class="card">
+  <h2>فرنسا تتغلب على ألمانيا</h2>
+  <div class="date">8 يونيو 2025</div>
+  <p>منتخب فرنسا ينتصر على ألمانيا 2-0 في مباراة تحديد المركز الثالث بفضل تألق مبابي.</p>
+</div>
+
+<div class="card">
+  <h2>مباريات اليوم</h2>
+  <div class="date">8 يونيو 2025</div>
+  <ul>
+    <li>البرتغال × إسبانيا – نهائي دوري الأمم الأوروبية</li>
+    <li>الأهلي × باتشوكا – مباراة ودية</li>
+    <li>البنك الأهلي × إنبي – نصف نهائي كأس مصر</li>
+  </ul>
+</div>
+
+  </div>  <div class="container about" id="about">
+    <h3>حول Abdelaziz Foot</h3>
+    <p>منصة رياضية تهتم بكل ما يخص نادي برشلونة وأخبار كرة القدم العالمية. نقدم لكم تغطية فورية واحترافية لأهم الأحداث والمباريات.</p>
+  </div>  <footer>
     <div class="social-icons">
-      <a href="https://www.instagram.com/abdelazizfoot01?igsh=bWM1ajE4NXZ3YjY=" target="_blank">إنستغرام</a>
-      <a href="https://www.facebook.com/share/16jeADzoZQ/" target="_blank">فيسبوك</a>
+      <a href="https://www.instagram.com/abdelazizfoot01?igsh=bWM1ajE4NXZ3YjY=" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/16jeADzoZQ/" target="_blank"><i class="fab fa-facebook"></i></a>
     </div>
-    <p>© 2025 Abdelaziz Foot - جميع الحقوق محفوظة</p>
+    <p>&copy; 2025 Abdelaziz Foot. جميع الحقوق محفوظة.</p>
   </footer>
 </body>
 </html>
