@@ -2,29 +2,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abdelaziz Foot - موقع أخبار برشلونة</title>
+  <title>Abdelaziz Foot - كرة القدم</title>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: 'Tajawal', sans-serif;
-      background: linear-gradient(135deg, #0a0028, #23004a);
-      color: #f9f9f9;
+      background: radial-gradient(circle at top left, #000428, #004e92);
+      color: #fff;
       direction: rtl;
       overflow-x: hidden;
     }
     header {
-      background: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px;
       text-align: center;
-      padding: 30px 20px;
       border-bottom: 3px solid #fcba03;
-      box-shadow: 0 0 15px #fc03ec;
+      box-shadow: 0 0 20px #fcba03;
     }
     header h1 {
-      font-size: 2.5em;
+      margin: 0;
       color: #fcba03;
-      text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #fcba03;
     }
     nav {
       margin-top: 15px;
@@ -34,116 +35,126 @@
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s ease;
+      transition: color 0.3s;
     }
     nav a:hover {
       color: #fcba03;
-      text-shadow: 0 0 5px #fcba03;
     }
     .container {
       padding: 40px 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
     .card {
-      background: rgba(30, 30, 30, 0.9);
-      border: 2px solid #ff00cc;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid #fcba03;
       padding: 20px;
-      border-radius: 15px;
+      border-radius: 12px;
       margin-bottom: 30px;
-      box-shadow: 0 0 20px #fc03ec;
+      box-shadow: 0 0 10px #fcba03;
     }
     .card h2 {
       color: #fcba03;
-      font-size: 1.6em;
+      margin-top: 0;
     }
     .date {
-      font-size: 0.85em;
+      font-size: 0.9em;
       color: #aaa;
       margin-bottom: 10px;
     }
-    a.btn {
+    .btn {
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 10px;
       padding: 10px 20px;
       background-color: #fcba03;
       color: #000;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s;
     }
-    a.btn:hover {
+    .btn:hover {
       background-color: #e0a800;
     }
+    .matches {
+      background: #111;
+      border: 2px dashed #fcba03;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
+    .matches h2 {
+      color: #fcba03;
+      margin-bottom: 20px;
+    }
+    .match {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+      color: #fff;
+    }
+    .match:last-child {
+      border-bottom: none;
+    }
     footer {
-      background: #0f0f0f;
-      padding: 25px 20px;
+      background-color: #000;
+      padding: 30px;
       text-align: center;
-      color: #888;
-      font-size: 0.9em;
+      margin-top: 40px;
+      color: #777;
     }
     .social-icons a {
       color: #fcba03;
-      font-size: 1.5em;
       margin: 0 10px;
-      transition: transform 0.3s;
-    }
-    .social-icons a:hover {
-      transform: scale(1.2);
-      color: #ff00cc;
-    }
-    .about {
-      margin-top: 40px;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid #fcba03;
-      border-radius: 15px;
-    }
-    .about h3 {
-      color: #fcba03;
+      font-size: 1.5em;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Abdelaziz Foot - أخبار برشلونة</h1>
+    <h1>Abdelaziz Foot</h1>
     <nav>
       <a href="#">الرئيسية</a>
       <a href="#news">الأخبار</a>
-      <a href="#about">حول</a>
+      <a href="#matches">المباريات</a>
     </nav>
-  </header>  <div class="container" id="news">
-    <div class="card">
-      <h2>نهائي دوري الأمم الأوروبية: البرتغال × إسبانيا</h2>
+  </header>  <div class="container">
+    <div class="card" id="news">
+      <h2>🏆 نهائي دوري الأمم الأوروبية: البرتغال × إسبانيا</h2>
       <div class="date">8 يونيو 2025</div>
-      <p>مباراة مثيرة بين البرتغال وإسبانيا تُقام الليلة في ملعب أليانز أرينا لتحديد بطل دوري الأمم الأوروبية.</p>
-      <a class="btn" href="https://www.uefa.com/uefanationsleague/" target="_blank">تفاصيل أكثر</a>
+      <p>تتجه الأنظار إلى ميونيخ حيث يلتقي منتخبا البرتغال وإسبانيا في نهائي مثير ضمن دوري الأمم الأوروبية.</p>
+      <a class="btn" href="https://www.uefa.com/uefanationsleague/" target="_blank">اقرأ المزيد</a>
     </div><div class="card">
-  <h2>فرنسا تتغلب على ألمانيا</h2>
+  <h2>⚽ فرنسا تتفوق على ألمانيا</h2>
   <div class="date">8 يونيو 2025</div>
-  <p>منتخب فرنسا ينتصر على ألمانيا 2-0 في مباراة تحديد المركز الثالث بفضل تألق مبابي.</p>
+  <p>فرنسا تهزم ألمانيا 2-0 لتحصد المركز الثالث بدوري الأمم الأوروبية، مبابي يتألق بتسجيل وصناعة.</p>
 </div>
 
-<div class="card">
-  <h2>مباريات اليوم</h2>
-  <div class="date">8 يونيو 2025</div>
-  <ul>
-    <li>البرتغال × إسبانيا – نهائي دوري الأمم الأوروبية</li>
-    <li>الأهلي × باتشوكا – مباراة ودية</li>
-    <li>البنك الأهلي × إنبي – نصف نهائي كأس مصر</li>
-  </ul>
+<div class="matches" id="matches">
+  <h2>📅 مباريات اليوم - 8 جوان 2025</h2>
+  <div class="match">
+    <span>البرتغال</span>
+    <strong>21:45</strong>
+    <span>إسبانيا</span>
+  </div>
+  <div class="match">
+    <span>البنك الأهلي</span>
+    <strong>19:00</strong>
+    <span>إنبي</span>
+  </div>
+  <div class="match">
+    <span>الأهلي</span>
+    <strong>23:00</strong>
+    <span>باتشوكا</span>
+  </div>
 </div>
 
-  </div>  <div class="container about" id="about">
-    <h3>حول Abdelaziz Foot</h3>
-    <p>منصة رياضية تهتم بكل ما يخص نادي برشلونة وأخبار كرة القدم العالمية. نقدم لكم تغطية فورية واحترافية لأهم الأحداث والمباريات.</p>
   </div>  <footer>
     <div class="social-icons">
-      <a href="https://www.instagram.com/abdelazizfoot01?igsh=bWM1ajE4NXZ3YjY=" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/abdelazizfoot01" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/share/16jeADzoZQ/" target="_blank"><i class="fab fa-facebook"></i></a>
     </div>
-    <p>&copy; 2025 Abdelaziz Foot. جميع الحقوق محفوظة.</p>
+    <p>© 2025 Abdelaziz Foot | موقع رياضي شامل لعشاق كرة القدم.</p>
   </footer>
 </body>
 </html>
