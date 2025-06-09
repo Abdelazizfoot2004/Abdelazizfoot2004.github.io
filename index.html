@@ -1,103 +1,147 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abdelaziz Foot - الرئيسية</title>
+  <title>Abdelaziz Foot - الموقع الرسمي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
+      background: linear-gradient(135deg, #002D72, #A50044);
+      color: #fff;
       direction: rtl;
+      overflow-x: hidden;
     }
-
     header {
-      background-color: #1e1e1e;
+      background: rgba(0, 0, 0, 0.6);
       padding: 20px;
       text-align: center;
-      border-bottom: 2px solid #ffcc00;
+      border-bottom: 3px solid #FDB913;
+      animation: fadeInDown 1.2s ease;
     }
-
     header h1 {
       margin: 0;
-      color: #ffcc00;
+      font-size: 2.5em;
+      color: #FDB913;
     }
-
     nav {
       margin-top: 10px;
     }
-
     nav a {
-      color: #ffffff;
+      color: #fff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
-
     nav a:hover {
-      text-decoration: underline;
+      color: #FDB913;
     }
-
     .container {
       padding: 30px 20px;
       max-width: 1000px;
       margin: auto;
+      animation: fadeInUp 1s ease;
     }
-
     .card {
-      background-color: #1e1e1e;
-      border: 1px solid #333;
+      background-color: rgba(0, 0, 0, 0.7);
+      border: 1px solid #444;
       padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
-
     .card h2 {
-      color: #ffcc00;
+      color: #FDB913;
       margin-top: 0;
     }
-
     .date {
       font-size: 0.9em;
-      color: #999;
+      color: #ccc;
       margin-bottom: 10px;
     }
-
     a.btn {
       display: inline-block;
       margin-top: 10px;
       padding: 10px 20px;
-      background-color: #ffcc00;
+      background-color: #FDB913;
       color: #000;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
     }
-
     a.btn:hover {
-      background-color: #e6b800;
+      background-color: #e0a800;
+    }
+    ul {
+      padding-left: 20px;
+      color: #eee;
+    }
+    footer {
+      background-color: rgba(0,0,0,0.6);
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid #FDB913;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Abdelaziz Foot</h1>
+    <h1>Abdelaziz Foot - الموقع الرسمي</h1>
     <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="news.html">أخبار اليوم</a>
+      <a href="#">الرئيسية</a>
+      <a href="#news">الأخبار</a>
+      <a href="#about">حول</a>
+      <a href="#social">تابعنا</a>
     </nav>
-  </header>
-
-  <div class="container">
+  </header>  <div class="container" id="news">
     <div class="card">
-      <h2>مرحبا بك في Abdelaziz Foot</h2>
-      <p>كل جديد في عالم كرة القدم، تغطية فورية وتحليلات لمباريات اليوم.</p>
-      <a class="btn" href="news.html">شاهد آخر الأخبار</a>
+      <h2>نهائي دوري الأمم الأوروبية: البرتغال × إسبانيا</h2>
+      <div class="date">8 يونيو 2025</div>
+      <p>مواجهة نارية بين البرتغال وإسبانيا على أرضية ملعب أليانز أرينا في نهائي دوري الأمم الأوروبية. من سيحمل اللقب؟</p>
+      <a class="btn" href="https://www.uefa.com/uefanationsleague/" target="_blank">المزيد</a>
     </div>
-  </div>
-
+    <div class="card">
+      <h2>فرنسا تتفوق على ألمانيا</h2>
+      <div class="date">8 يونيو 2025</div>
+      <p>بهدف مبابي وصناعة مذهلة، فرنسا تحصد المركز الثالث على حساب ألمانيا في مواجهة قوية.</p>
+    </div>
+    <div class="card">
+      <h2>نتائج مباريات اليوم</h2>
+      <div class="date">8 يونيو 2025</div>
+      <ul>
+        <li>البرتغال 2 × 1 إسبانيا</li>
+        <li>فرنسا 2 × 0 ألمانيا</li>
+        <li>الأهلي 1 × 1 باتشوكا</li>
+      </ul>
+    </div>
+  </div>  <div class="container" id="about">
+    <div class="card">
+      <h2>حول Abdelaziz Foot</h2>
+      <p>Abdelaziz Foot هو موقع رياضي جزائري يهتم بتقديم آخر أخبار كرة القدم، تغطية المباريات، النتائج المباشرة، والتحليلات الدقيقة بلغة عربية بسيطة واحترافية. هدفنا هو تقديم محتوى عالي الجودة لعشاق الرياضة في الجزائر والعالم العربي.</p>
+    </div>
+  </div>  <footer id="social">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/abdelazizfoot01?igsh=bWM1ajE4NXZ3YjY=" target="_blank">إنستغرام</a>
+      <a href="https://www.facebook.com/share/16jeADzoZQ/" target="_blank">فيسبوك</a>
+    </div>
+    <p>© 2025 Abdelaziz Foot - جميع الحقوق محفوظة</p>
+  </footer>
 </body>
 </html>
